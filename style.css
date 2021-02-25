@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pic.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    padding: 35px 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: sans-serif; 
+}
+.navbar ul li:after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: yellowgreen ;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.title{
+    font-size: 70px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.content p{
+    margin: 15px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+button{
+    padding: 15px 25px;   
+    margin: 20px;    
+    font-size: 16px;
+    letter-spacing: 1px; border: 2px solid yellow;    
+    color: white; cursor: pointer;    
+    background: linear-gradient(to right, transparent 50%,yellow 50%);    
+    background-size: 200%;    
+    background-position: left; transition: background-position 0.5s;
+}
+button:hover{
+    background-position: right;
+    color: black;
+}
+.slider{
+    color: yellow;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 8s linear infinite;
+}
+@keyframes slider{
+    0%{margin-top: -400px;}
+    20%{margin-top: -400px;}
+    25%{margin-top: -200px;}
+    40%{margin-top: -200px;}
+    45%{margin-top: 0px;}
+    60%{margin-top: 0px;}
+    65%{margin-top: 200px;}
+    80%{margin-top: 200px;}
+    85%{margin-top: 400px;}
+    100%{margin-top: 400px;}
+}
+.gallery h1{
+    text-align: center;
+    padding-bottom: 10px;
+}  
+.gallery{
+    padding: 30px 30px;
+    font-size: 25px;
+    background-color: rgba(172, 166, 166, 0.589);
+    font-weight: 100;
+    height: max-content;
+    font-family: sans-serif;
+}   
+*{
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.clm{
+    float: left;
+    width: 25%;
+    padding: 18px;
+}
+.clm img{
+    height: 300px;
+}
+.clm img:hover{
+    transform: scale(1.1);
+}
+.features{
+    padding: 100px 0;           
+}
+.contact{
+    padding: 30px 30px;
+    font-size: 20px;
+    background-color: rgba(172, 166, 166, 0.589);
+    font-weight: 100;
+    height: max-content;
+    font-family: sans-serif;        
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+  }
+  .contact-section{
+    background: url(bg.jpg);
+    background-size: cover;
+    padding: 40px 0;
+  }
+  .contact-section h1{
+    text-align: center;
+    color: #ddd;
+    top: 70px;
+  }
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    padding: 15px 25px;   
+    margin: 20px;    
+    font-size: 16px;
+    letter-spacing: 1px; border: 2px solid  #2980b9;   
+    color: white; cursor: pointer;    
+    background: linear-gradient(to right, transparent 50%, #2980b9 50%);    
+    background-size: 200%;    
+    background-position: left; transition: background-position 0.5s;
+  }
+  .contact-form-btn:hover{  
+    background-position: right;
+    color: black;
+  }
